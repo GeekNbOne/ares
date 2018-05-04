@@ -1,0 +1,27 @@
+Goal of the library
+
+To be a multi-asset risk system that can perform basic metrics computation, stress testing and scenario analysis.
+
+The concept is to have securities that will have engines, that are the specific to each financial asset. The engine will
+feed on risk factors, risk parameters.
+
+
+The difference between risk factors and risk parameters is that risk factors are observable values and risk parameters are
+computed.  Both of them shall be actionable.
+
+When you add a security to a portfolio, it will add all risk factors and risk parameters to the stress testing pool
+of the portfolio and this pool shall be accessible through the portfolio.
+
+The risk factors are time series of different type:
+
+- Single quote
+- Term structure quote
+- Surface quote
+
+You should be able to compute correlation matrix or supply correlation matrix.
+
+The risk factor will have their present state and on top of that their will be shock that will be apply.  You can call
+basic present value or called shock present value.
+
+Should I create a shock object that will define the shock ?
+
